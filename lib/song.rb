@@ -34,4 +34,7 @@ class Song
   def self.alphabetical
     self.all.sort_by!{|song| song.name.downcase}
   end
+  def self.new_from_filename(name)
+    array_split = name.split(/[-.]/)
+  end
 end
