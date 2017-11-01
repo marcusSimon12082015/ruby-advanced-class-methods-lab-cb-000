@@ -32,6 +32,6 @@ class Song
     self.find_by_name(name) == nil ? self.create_by_name(name) : self.find_by_name(name)
   end
   def self.alphabetical
-    self.all.sort_by!{|name| name.downcase}
+    self.all.sort_by{|name| name.downcase}
   end
 end
